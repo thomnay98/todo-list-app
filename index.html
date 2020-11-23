@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="input-work">
+            <h2>Thêm công việc</h2>
+            <div class="entry-form">
+                <form>
+                    <label for="title">Tên công việc</label>
+                    <input type="text" id="name" />
+
+                    <label for="place">Địa điểm</label>
+                    <input type="text" id="place" />
+
+                    <label for="time">Thời gian</label>
+                    <input type="text" id="time" />
+
+                    <label for="description">Mô tả</label>
+                    <textarea id="description"></textarea>
+                </form>
+
+                <span class="message"></span>
+
+                <div class="btn-input">
+                    <button type="submit" id="submit-btn">
+                        <span>
+                            <i class="fas fa-plus"></i>
+                        </span>Thêm
+                    </button>
+                    <button type="submit" id="cancel-btn">
+                        <span>
+                            <i class="fas fa-times"></i>
+                        </span>Hủy
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="display-work">
+            <h2>Danh sách các công việc</h2>
+            <button type="submit" id="reset-btn">
+                Reset
+            </button>
+            <div class="work-container">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
